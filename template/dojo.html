@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="styles/kendo.common.min.css" />
+    <link rel="stylesheet" href="styles/kendo.default.min.css" />
+    <link rel="stylesheet" href="styles/kendo.default.mobile.min.css" />
+    <link rel="stylesheet" href="/assets/css/dojo.css" type="text/css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/kendo.all.min.js"></script>
+    
+    
+
+</head>
+<body>
+    
+        <div id="example">
+                <div class="demo-section">
+                        <div id="tabstrip">
+                            <ul>
+                                <li class="k-active">
+                                    Paris
+                                </li>
+                                <li>
+                                    New York
+                                </li>
+                                <li>
+                                    London
+                                </li>
+                                <li>
+                                    Moscow
+                                </li>
+                            </ul>
+                            <div>
+                                <span class="rainy">&nbsp;</span>
+                                <div class="weather">
+                                    <h2>17<span>&ordm;C</span></h2>
+                                    <p>Rainy weather in Paris.</p>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="sunny">&nbsp;</span>
+                                <div class="weather">
+                                    <h2>29<span>&ordm;C</span></h2>
+                                    <p>Sunny weather in New York.</p>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="sunny">&nbsp;</span>
+                                <div class="weather">
+                                    <h2>21<span>&ordm;C</span></h2>
+                                    <p>Sunny weather in London.</p>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="cloudy">&nbsp;</span>
+                                <div class="weather">
+                                    <h2>16<span>&ordm;C</span></h2>
+                                    <p>Cloudy weather in Moscow.</p>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+
+            <script>
+                $(document).ready(function() {
+                    $("#tabstrip").kendoTabStrip({
+                        animation:  {
+                            open: {
+                                effects: "fadeIn"
+                            }
+                        }
+                    });
+                });
+            </script>
+        </div>
+
+
+
+</body>
+</html>

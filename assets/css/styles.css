@@ -3182,11 +3182,13 @@ textarea.form-control-lg {
   color: #fff;
   background-color: #dc3545;
   border-color: #dc3545;
+  transition: transform .2s;
 }
 .btn-danger:hover {
   color: #fff;
-  background-color: #bb2d3b;
-  border-color: #b02a37;
+  background-color: #ab2532;
+  border-color: #a41a28;
+  transform: scale(1.2);
 }
 .btn-check:focus + .btn-danger, .btn-danger:focus {
   color: #fff;
@@ -3421,11 +3423,13 @@ textarea.form-control-lg {
 .btn-outline-light {
   color: #f8f9fa;
   border-color: #f8f9fa;
+  transition: transform .2s
 }
 .btn-outline-light:hover {
   color: #000;
   background-color: #f8f9fa;
   border-color: #f8f9fa;
+  transform: scale(1.2);
 }
 .btn-check:focus + .btn-outline-light, .btn-outline-light:focus {
   box-shadow: 0 0 0 0.25rem rgba(248, 249, 250, 0.5);
@@ -11296,12 +11300,19 @@ textarea.form-control-lg {
 }
 
 
+.header {
+  background: linear-gradient(-45deg, #bb2d3b 0%, #06357a 100%);
+}
+
  .iconlogo {
   width: 10%;
   height: 10%;
   margin-right: 20px;
 } 
 
+footer {
+  background: linear-gradient(-45deg, #bb2d3b 0%, #06357a 100%);
+}
 
 @media (min-width: 770px){
   .iconlogo {
@@ -11310,3 +11321,10 @@ textarea.form-control-lg {
  } 
  }
 
+a.menu {
+  color: black;
+}
+
+ a.menu:hover {
+  color: red;
+ }

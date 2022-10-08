@@ -1,0 +1,32 @@
+.tabs {
+    position: relative;
+    width: 100%;
+    background: #fff;
+    overflow: hidden;
+    padding-bottom: 100px;
+    border: 1px solid #000;
+    }
+
+.tabs > section > a {
+    position: relative;
+    display: block;
+    float: left;
+    border: 1px solid red;
+    }
+
+.tabs > section > div {
+    position: absolute;
+    top: 1.5em;
+    left: -50000px;
+    width: 100%;
+    background: #fff;
+    border: 1px solid blue;
+    }
+
+.tabs > section:target > div {
+    left: 0;
+    }
+
+.tabs > section:not(:target)#one > div {
+    left: 0;
+    }
